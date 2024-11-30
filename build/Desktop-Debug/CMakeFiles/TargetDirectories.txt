@@ -1,0 +1,9 @@
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/Flappy_Bird_Game.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/install.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/Flappy_Bird_Game_autogen_timestamp_deps.dir
+/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/Flappy_Bird_Game_autogen.dir
