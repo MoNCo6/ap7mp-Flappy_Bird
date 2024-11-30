@@ -1,5 +1,7 @@
 Flappy_Bird_Game_autogen/timestamp: \
 	/home/monco/QtProjects/Flappy_Bird_Game/CMakeLists.txt \
+	/home/monco/QtProjects/Flappy_Bird_Game/birditem.cpp \
+	/home/monco/QtProjects/Flappy_Bird_Game/birditem.h \
 	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake \
 	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/3.29.8/CMakeCXXCompiler.cmake \
 	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/CMakeFiles/3.29.8/CMakeSystem.cmake \
@@ -12,6 +14,7 @@ Flappy_Bird_Game_autogen/timestamp: \
 	/home/monco/QtProjects/Flappy_Bird_Game/scene.h \
 	/home/monco/QtProjects/Flappy_Bird_Game/widget.cpp \
 	/home/monco/QtProjects/Flappy_Bird_Game/widget.h \
+	/usr/include/QtCore/QObject \
 	/usr/include/QtCore/QPropertyAnimation \
 	/usr/include/QtCore/QTimer \
 	/usr/include/QtCore/q20functional.h \

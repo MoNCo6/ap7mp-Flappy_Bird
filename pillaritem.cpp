@@ -11,12 +11,12 @@ PillarItem::PillarItem() :
     // Nastavenie pozície horného stĺpa
     // Horný stĺp je posunutý nahor o svoju výšku + 60 bodov, aby vytvoril medzeru
     topPillar -> setPos(QPointF(0,0) - QPointF(topPillar -> boundingRect().width()/2,
-                                               topPillar->boundingRect().height() + 60));
+                                              topPillar->boundingRect().height() + 60));
 
     // Nastavenie pozície dolného stĺpa
     // Dolný stĺp je posunutý nadol o 60 bodov, čím sa zachováva medzera medzi stĺpmi
     bottomPillar -> setPos(QPointF(0,0) + QPointF(-bottomPillar -> boundingRect().width()/2,
-                                                  60));
+                                                 60));
     // Pridanie stĺpov do skupiny objektov
     addToGroup(topPillar);
     addToGroup(bottomPillar);

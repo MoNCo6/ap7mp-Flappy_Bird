@@ -1,7 +1,7 @@
 #include "widget.h"
 #include "./ui_widget.h"
 #include <QGraphicsPixmapItem>
-#include "pillaritem.h"
+#include "birditem.h"
 
 // Konštruktor triedy Widget
 Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
@@ -18,11 +18,15 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
 
     // Vycentrovanie pozadia
     pixItem -> setPos(QPointF(0,0) - QPointF(pixItem->boundingRect().width()/2,
-                                             pixItem->boundingRect().height()/2));
+                                            pixItem->boundingRect().height()/2));
 
     // Pridanie pomocných čiar na testovanie scény
     scene -> addLine(-400,0,400,0,QPen(Qt::blue)); // Horizontálna čiara
     scene -> addLine(0,-400,0,400,QPen(Qt::blue)); // Vertikálna čiara
+
+    // Pridanie vtáčika do scény
+    BirdItem * bird = new BirdItem(QPixmap(":/images/bird_up.png"));
+    scene -> addItem(bird);
 
     ui -> graphicsView -> setScene(scene);
 }
