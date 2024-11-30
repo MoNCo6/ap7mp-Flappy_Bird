@@ -23,6 +23,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Flappy_Bird_Game
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        resource.qrc
+        scene.h scene.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Flappy_Bird_Game APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

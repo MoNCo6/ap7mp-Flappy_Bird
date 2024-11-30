@@ -1,0 +1,19 @@
+# ninja log v5
+1	429	1732980714215337949	Flappy_Bird_Game_autogen/timestamp	82cc57fd7469d06f
+1	429	1732980714215337949	Flappy_Bird_Game_autogen/mocs_compilation.cpp	82cc57fd7469d06f
+1	429	1732980714215337949	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/timestamp	82cc57fd7469d06f
+1	429	1732980714215337949	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/mocs_compilation.cpp	82cc57fd7469d06f
+431	485	1732980714274337432	Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp	cd0976a76da3af4a
+431	485	1732980714274337432	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp	cd0976a76da3af4a
+486	870	1732980714662334035	CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp.o	614b5009493d6dce
+485	3018	1732980716808317182	CMakeFiles/Flappy_Bird_Game.dir/scene.cpp.o	16b60f27ca0c66e6
+485	3492	1732980717284313926	CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/mocs_compilation.cpp.o	38a6cfd4b3d59b4a
+485	3569	1732980717360313429	CMakeFiles/Flappy_Bird_Game.dir/widget.cpp.o	d6640c856a89943b
+485	3578	1732980717369313370	CMakeFiles/Flappy_Bird_Game.dir/main.cpp.o	866d817dd18b063c
+3578	3865	1732980717653311511	Flappy_Bird_Game	b25d5870d7323303
+3	18	1732980963633431904	Flappy_Bird_Game_autogen/timestamp	82cc57fd7469d06f
+3	18	1732980963633431904	Flappy_Bird_Game_autogen/mocs_compilation.cpp	82cc57fd7469d06f
+3	18	1732980963633431904	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/timestamp	82cc57fd7469d06f
+3	18	1732980963633431904	/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/mocs_compilation.cpp	82cc57fd7469d06f
+19	1784	1732980965441563743	CMakeFiles/Flappy_Bird_Game.dir/widget.cpp.o	d6640c856a89943b
+1784	2037	1732980965692582071	Flappy_Bird_Game	b25d5870d7323303
