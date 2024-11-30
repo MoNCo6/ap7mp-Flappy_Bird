@@ -390,6 +390,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/monco/QtProjects/Flappy_Bird_Game/pillaritem.h",
+			"MU",
+			"EWIEGA46WW/moc_pillaritem.cpp",
+			null
+		],
+		[
 			"/home/monco/QtProjects/Flappy_Bird_Game/scene.h",
 			"MU",
 			"EWIEGA46WW/moc_scene.cpp",
@@ -461,6 +467,7 @@
 	"SOURCES" : 
 	[
 		[ "/home/monco/QtProjects/Flappy_Bird_Game/main.cpp", "MU", null ],
+		[ "/home/monco/QtProjects/Flappy_Bird_Game/pillaritem.cpp", "MU", null ],
 		[ "/home/monco/QtProjects/Flappy_Bird_Game/scene.cpp", "MU", null ],
 		[ "/home/monco/QtProjects/Flappy_Bird_Game/widget.cpp", "MU", null ]
 	],

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-1e38bffda6f0102f10d5.json",
+					"jsonFile" : "directory-.-Debug-cee98d6d1743204ef924.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Flappy_Bird_Game::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Flappy_Bird_Game-Debug-364ed1b9d14d34950123.json",
+					"jsonFile" : "target-Flappy_Bird_Game-Debug-28323bdd3145c2dc0224.json",
 					"name" : "Flappy_Bird_Game",
 					"projectIndex" : 0
 				},

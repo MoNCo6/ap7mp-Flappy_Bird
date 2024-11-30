@@ -25,6 +25,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         resource.qrc
         scene.h scene.cpp
+        pillaritem.h pillaritem.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Flappy_Bird_Game APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -27,7 +27,7 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName("Widget");
-        Widget->resize(800, 600);
+        Widget->resize(547, 816);
         verticalLayout = new QVBoxLayout(Widget);
         verticalLayout->setObjectName("verticalLayout");
         graphicsView = new QGraphicsView(Widget);

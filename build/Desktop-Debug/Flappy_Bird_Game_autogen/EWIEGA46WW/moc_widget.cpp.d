@@ -1,10 +1,14 @@
 /home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/EWIEGA46WW/moc_widget.cpp: /home/monco/QtProjects/Flappy_Bird_Game/widget.h \
   /home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/moc_predefs.h \
+  /home/monco/QtProjects/Flappy_Bird_Game/pillaritem.h \
   /home/monco/QtProjects/Flappy_Bird_Game/scene.h \
+  /usr/include/QtCore/QPropertyAnimation \
+  /usr/include/QtCore/QTimer \
   /usr/include/QtCore/q20functional.h \
   /usr/include/QtCore/q20memory.h \
   /usr/include/QtCore/q20type_traits.h \
   /usr/include/QtCore/q23utility.h \
+  /usr/include/QtCore/qabstractanimation.h \
   /usr/include/QtCore/qalgorithms.h \
   /usr/include/QtCore/qanystringview.h \
   /usr/include/QtCore/qarraydata.h \
@@ -14,6 +18,7 @@
   /usr/include/QtCore/qatomic.h \
   /usr/include/QtCore/qatomic_cxx11.h \
   /usr/include/QtCore/qbasicatomic.h \
+  /usr/include/QtCore/qbasictimer.h \
   /usr/include/QtCore/qbindingstorage.h \
   /usr/include/QtCore/qbytearray.h \
   /usr/include/QtCore/qbytearrayalgorithms.h \
@@ -33,6 +38,7 @@
   /usr/include/QtCore/qdarwinhelpers.h \
   /usr/include/QtCore/qdatastream.h \
   /usr/include/QtCore/qdebug.h \
+  /usr/include/QtCore/qeasingcurve.h \
   /usr/include/QtCore/qendian.h \
   /usr/include/QtCore/qexceptionhandling.h \
   /usr/include/QtCore/qflags.h \
@@ -69,6 +75,7 @@
   /usr/include/QtCore/qpair.h \
   /usr/include/QtCore/qpoint.h \
   /usr/include/QtCore/qprocessordetection.h \
+  /usr/include/QtCore/qpropertyanimation.h \
   /usr/include/QtCore/qrect.h \
   /usr/include/QtCore/qrefcount.h \
   /usr/include/QtCore/qscopedpointer.h \
@@ -102,6 +109,7 @@
   /usr/include/QtCore/qtdeprecationmarkers.h \
   /usr/include/QtCore/qtenvironmentvariables.h \
   /usr/include/QtCore/qtextstream.h \
+  /usr/include/QtCore/qtimer.h \
   /usr/include/QtCore/qtmetamacros.h \
   /usr/include/QtCore/qtnoop.h \
   /usr/include/QtCore/qtpreprocessorsupport.h \
@@ -114,6 +122,7 @@
   /usr/include/QtCore/qtypes.h \
   /usr/include/QtCore/qutf8stringview.h \
   /usr/include/QtCore/qvariant.h \
+  /usr/include/QtCore/qvariantanimation.h \
   /usr/include/QtCore/qvarlengtharray.h \
   /usr/include/QtCore/qversiontagging.h \
   /usr/include/QtCore/qxptype_traits.h \
@@ -130,6 +139,7 @@
   /usr/include/QtGui/qimage.h \
   /usr/include/QtGui/qkeysequence.h \
   /usr/include/QtGui/qpaintdevice.h \
+  /usr/include/QtGui/qpainterpath.h \
   /usr/include/QtGui/qpalette.h \
   /usr/include/QtGui/qpen.h \
   /usr/include/QtGui/qpixelformat.h \
@@ -143,8 +153,11 @@
   /usr/include/QtGui/qtguiglobal.h \
   /usr/include/QtGui/qtransform.h \
   /usr/include/QtGui/qwindowdefs.h \
+  /usr/include/QtWidgets/QGraphicsItemGroup \
+  /usr/include/QtWidgets/QGraphicsPixmapItem \
   /usr/include/QtWidgets/QGraphicsScene \
   /usr/include/QtWidgets/QWidget \
+  /usr/include/QtWidgets/qgraphicsitem.h \
   /usr/include/QtWidgets/qgraphicsscene.h \
   /usr/include/QtWidgets/qsizepolicy.h \
   /usr/include/QtWidgets/qtwidgets-config.h \

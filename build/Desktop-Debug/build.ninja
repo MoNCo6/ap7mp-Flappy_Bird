@@ -81,6 +81,14 @@ build CMakeFiles/Flappy_Bird_Game.dir/scene.cpp.o: CXX_COMPILER__Flappy_Bird_Gam
   OBJECT_DIR = CMakeFiles/Flappy_Bird_Game.dir
   OBJECT_FILE_DIR = CMakeFiles/Flappy_Bird_Game.dir
 
+build CMakeFiles/Flappy_Bird_Game.dir/pillaritem.cpp.o: CXX_COMPILER__Flappy_Bird_Game_unscanned_Debug /home/monco/QtProjects/Flappy_Bird_Game/pillaritem.cpp || cmake_object_order_depends_target_Flappy_Bird_Game
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/Flappy_Bird_Game.dir/pillaritem.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/include -isystem /usr/include/QtCore -isystem /usr/mkspecs/linux-g++ -isystem /usr/include/QtWidgets -isystem /usr/include/QtGui
+  OBJECT_DIR = CMakeFiles/Flappy_Bird_Game.dir
+  OBJECT_FILE_DIR = CMakeFiles/Flappy_Bird_Game.dir
+
 build CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp.o: CXX_COMPILER__Flappy_Bird_Game_unscanned_Debug /home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp || cmake_object_order_depends_target_Flappy_Bird_Game
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp.o.d
@@ -97,7 +105,7 @@ build CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_re
 #############################################
 # Link the executable Flappy_Bird_Game
 
-build Flappy_Bird_Game: CXX_EXECUTABLE_LINKER__Flappy_Bird_Game_Debug CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/mocs_compilation.cpp.o CMakeFiles/Flappy_Bird_Game.dir/main.cpp.o CMakeFiles/Flappy_Bird_Game.dir/widget.cpp.o CMakeFiles/Flappy_Bird_Game.dir/scene.cpp.o CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.7.3 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.7.3 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.7.3 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || Flappy_Bird_Game_autogen Flappy_Bird_Game_autogen_timestamp_deps
+build Flappy_Bird_Game: CXX_EXECUTABLE_LINKER__Flappy_Bird_Game_Debug CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/mocs_compilation.cpp.o CMakeFiles/Flappy_Bird_Game.dir/main.cpp.o CMakeFiles/Flappy_Bird_Game.dir/widget.cpp.o CMakeFiles/Flappy_Bird_Game.dir/scene.cpp.o CMakeFiles/Flappy_Bird_Game.dir/pillaritem.cpp.o CMakeFiles/Flappy_Bird_Game.dir/Flappy_Bird_Game_autogen/EWIEGA46WW/qrc_resource.cpp.o | /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.7.3 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.7.3 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.7.3 /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/libOpenGL.so || Flappy_Bird_Game_autogen Flappy_Bird_Game_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.7.3  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.7.3  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.7.3  /usr/lib/x86_64-linux-gnu/libGLX.so  /usr/lib/x86_64-linux-gnu/libOpenGL.so
   OBJECT_DIR = CMakeFiles/Flappy_Bird_Game.dir
