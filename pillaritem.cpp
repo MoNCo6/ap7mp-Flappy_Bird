@@ -3,7 +3,7 @@
 #include <QDebug>
 #include <QGraphicsScene>
 
-// Konštruktor triedy PillarItem
+// Konštruktor triedy PillarItem - nastavuje grafické objekty a ich pozíciu
 PillarItem::PillarItem() :
     topPillar(new QGraphicsPixmapItem(QPixmap(":/images/pillar_top.png"))),
     bottomPillar(new QGraphicsPixmapItem(QPixmap(":/images/pillar_bottom.png")))
@@ -17,6 +17,7 @@ PillarItem::PillarItem() :
     // Dolný stĺp je posunutý nadol o 60 bodov, čím sa zachováva medzera medzi stĺpmi
     bottomPillar -> setPos(QPointF(0,0) + QPointF(-bottomPillar -> boundingRect().width()/2,
                                                  60));
+
     // Pridanie stĺpov do skupiny objektov
     addToGroup(topPillar);
     addToGroup(bottomPillar);
@@ -30,14 +31,13 @@ PillarItem::PillarItem() :
 
     // Inicializácia animácie na posun stĺpov
     xAnimation = new QPropertyAnimation(this, "x", this);
-    xAnimation -> setStartValue(260 + xRandomizer); // Začiatok pohybu
-    xAnimation -> setEndValue(-260); // Koniec pohybu
-    xAnimation -> setEasingCurve(QEasingCurve::Linear); // Plynulý pohyb
-    xAnimation -> setDuration(1500); // Trvanie animácie
+    xAnimation -> setStartValue(260 + xRandomizer);
+    xAnimation -> setEndValue(-260);
+    xAnimation -> setEasingCurve(QEasingCurve::Linear);
+    xAnimation -> setDuration(1500);
 
     // Po ukončení animácie sa stĺp odstráni
     connect(xAnimation, &QPropertyAnimation::finished,[=](){
-        qDebug() << "Animation finished";
         scene() -> removeItem(this); // Odstránenie stĺpa zo scény
         delete this; // Deštrukcia stĺpa
     });
@@ -57,10 +57,9 @@ qreal PillarItem::x() const
     return m_x;
 }
 
-// Setter pre hodnotu osi X a aktualizácia pozície
+// Setter pre hodnotu osi X
 void PillarItem::setX(qreal x)
 {
-    qDebug() << "Pillar position: " << x;
-    m_x = x; // Nastavenie novej hodnoty osi X
+    m_x = x;
     setPos(QPointF(0,0) + QPointF(x, yPos)); // Aktualizácia pozície stĺpov na scéne
 }

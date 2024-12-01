@@ -45,7 +45,8 @@ constexpr auto qt_meta_stringdata_CLASSBirdItemENDCLASS = QtMocHelpers::stringDa
     "end",
     "duration",
     "QEasingCurve",
-    "curve"
+    "curve",
+    "fallToGroundIfNecessary"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -58,22 +59,24 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSBirdItemENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       3,   14, // methods
-       2,   45, // properties
+       4,   14, // methods
+       2,   52, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   32,    2, 0x0a,    3 /* Public */,
-       4,    1,   35,    2, 0x0a,    5 /* Public */,
-       6,    3,   38,    2, 0x0a,    7 /* Public */,
+       1,    1,   38,    2, 0x0a,    3 /* Public */,
+       4,    1,   41,    2, 0x0a,    5 /* Public */,
+       6,    3,   44,    2, 0x0a,    7 /* Public */,
+      11,    0,   51,    2, 0x0a,   11 /* Public */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::QReal,    3,
     QMetaType::Void, QMetaType::QReal,    5,
     QMetaType::Void, QMetaType::QReal, QMetaType::Int, 0x80000000 | 9,    7,    8,   10,
+    QMetaType::Void,
 
  // properties: name, type, flags
        3, QMetaType::QReal, 0x00015103, uint(-1), 0,
@@ -105,7 +108,9 @@ Q_CONSTINIT const QMetaObject BirdItem::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<const qreal &, std::false_type>,
         QtPrivate::TypeAndForceComplete<const int &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const QEasingCurve &, std::false_type>
+        QtPrivate::TypeAndForceComplete<const QEasingCurve &, std::false_type>,
+        // method 'fallToGroundIfNecessary'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
@@ -119,6 +124,7 @@ void BirdItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, vo
         case 0: _t->setRotation((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1]))); break;
         case 1: _t->setY((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1]))); break;
         case 2: _t->rotateTo((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<int>>(_a[2])),(*reinterpret_cast< std::add_pointer_t<QEasingCurve>>(_a[3]))); break;
+        case 3: _t->fallToGroundIfNecessary(); break;
         default: ;
         }
     } else if (_c == QMetaObject::ReadProperty) {
@@ -165,13 +171,13 @@ int BirdItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 4)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 4;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 4)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 4;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {

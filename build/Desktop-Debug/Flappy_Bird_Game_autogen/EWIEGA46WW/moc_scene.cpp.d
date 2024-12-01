@@ -1,6 +1,8 @@
 /home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/EWIEGA46WW/moc_scene.cpp: /home/monco/QtProjects/Flappy_Bird_Game/scene.h \
   /home/monco/QtProjects/Flappy_Bird_Game/build/Desktop-Debug/Flappy_Bird_Game_autogen/moc_predefs.h \
+  /home/monco/QtProjects/Flappy_Bird_Game/birditem.h \
   /home/monco/QtProjects/Flappy_Bird_Game/pillaritem.h \
+  /usr/include/QtCore/QObject \
   /usr/include/QtCore/QPropertyAnimation \
   /usr/include/QtCore/QTimer \
   /usr/include/QtCore/q20functional.h \

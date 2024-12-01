@@ -1,9 +1,8 @@
 #include "widget.h"
 #include "./ui_widget.h"
 #include <QGraphicsPixmapItem>
-#include "birditem.h"
 
-// Konštruktor triedy Widget
+// Konštruktor triedy Widget - inicializuje UI a grafickú scénu
 Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
 {
     ui->setupUi(this);
@@ -24,11 +23,10 @@ Widget::Widget(QWidget *parent) : QWidget(parent), ui(new Ui::Widget)
     scene -> addLine(-400,0,400,0,QPen(Qt::blue)); // Horizontálna čiara
     scene -> addLine(0,-400,0,400,QPen(Qt::blue)); // Vertikálna čiara
 
-    // Pridanie vtáčika do scény
-    BirdItem * bird = new BirdItem(QPixmap(":/images/bird_up.png"));
-    scene -> addItem(bird);
-
     ui -> graphicsView -> setScene(scene);
+
+    // Pridanie vtáčika do scény
+    scene -> addBird();
 }
 
 // Destruktor triedy Widget

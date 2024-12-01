@@ -17,6 +17,8 @@ public:
 
     qreal y() const;
 
+    void shootUp();
+
 signals:
 
 public slots:
@@ -25,6 +27,8 @@ public slots:
     void setY(qreal y);
 
     void rotateTo(const qreal &end, const int &duration, const QEasingCurve &curve);
+
+    void fallToGroundIfNecessary();
 
 private:
     enum WingPosition{
