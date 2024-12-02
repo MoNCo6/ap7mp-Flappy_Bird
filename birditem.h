@@ -19,6 +19,10 @@ public:
 
     void shootUp();
 
+    void startFlying();
+
+    void freezeInPlace();
+
 signals:
 
 public slots:
@@ -36,15 +40,21 @@ private:
         Middle,
         Down
     };
+
     void updatePixmap();
 
     WingPosition wingPosition;
+
     // 0:down, 1:up
     bool wingDirection;
+
     qreal m_rotation;
     qreal m_y;
+
     QPropertyAnimation * yAnimation;
+
     QPropertyAnimation * rotationAnimation;
+
     qreal groundPosition;
 };
 

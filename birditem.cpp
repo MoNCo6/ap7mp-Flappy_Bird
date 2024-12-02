@@ -26,15 +26,11 @@ BirdItem::BirdItem(QPixmap pixmap) :
     yAnimation = new QPropertyAnimation(this, "y", this);
     yAnimation -> setStartValue(scenePos().y());
     yAnimation -> setEndValue(groundPosition);
-    yAnimation -> setEasingCurve(QEasingCurve::InQuad);
-    yAnimation -> setDuration(1000);
-
-    // Spustenie animácie padania
-    yAnimation -> start();
+    yAnimation -> setEasingCurve(QEasingCurve::InQuad); // Hladká animácia zrýchlenia
+    yAnimation -> setDuration(1000); // Trvanie animácie pádu (1 sekunda)
 
     // Inicializácia animácie rotácie
     rotationAnimation = new QPropertyAnimation(this, "rotation", this);
-    rotateTo(90, 1200, QEasingCurve::InQuad); // Rotácia o 90° za 1,2 sekundy
 }
 
 // Metóda na aktualizáciu obrázkov vtáčika (pohyb krídel)
@@ -103,8 +99,8 @@ void BirdItem::shootUp()
     // Nastavenie novej vertikálnej animácie pre skok
     yAnimation -> setStartValue(curPosY);
     yAnimation -> setEndValue(curPosY - scene()->sceneRect().height()/8); // Skok nahor
-    yAnimation -> setEasingCurve(QEasingCurve::OutQuad);
-    yAnimation -> setDuration(285);
+    yAnimation -> setEasingCurve(QEasingCurve::OutQuad); // Plynulé spomalenie
+    yAnimation -> setDuration(285); // Trvanie skoku (285 ms)
 
     // Po ukončení skoku skontroluje, či je potrebné spustiť pád
     connect(yAnimation,&QPropertyAnimation::finished,[=](){
@@ -115,7 +111,21 @@ void BirdItem::shootUp()
     yAnimation -> start();
 
     // Nastavenie animácie rotácie počas skoku
-    rotateTo(-20, 200, QEasingCurve::OutCubic);
+    rotateTo(-20, 200, QEasingCurve::OutCubic); // Rotácia do mierneho uhla nahor
+}
+
+// Spustenie animácie letu vtáčika
+void BirdItem::startFlying()
+{
+    yAnimation -> start(); // Spustenie animácie padania
+    rotateTo(90, 1200, QEasingCurve::InQuad); // Rotácia o 90° za 1,2 sekundy
+}
+
+// Zastavenie pohybu vtáčika
+void BirdItem::freezeInPlace()
+{
+    yAnimation -> stop(); // Zastavenie vertikálneho pohybu
+    rotationAnimation -> stop(); // Zastavenie rotácie
 }
 
 

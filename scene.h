@@ -14,21 +14,51 @@ public:
 
     void addBird();
 
+    void startGame();
+
+    bool getGameOn() const;
+
+    void setGameOn(bool newGameOn);
+
+    void incrementScore();
+
+    void setScore(int newScore);
+
 signals:
 
 public slots:
 
+    // QGraphicsScene interface
+protected:
+    void keyPressEvent(QKeyEvent *event);
+
+    void mousePressEvent(QGraphicsSceneMouseEvent *event);
+
+
 private:
+    void showGameOverGraphics();
+
+    void hideGameOverGraphics();
+
+    void cleanPillars();
+
     void setUpPillarTimer();
+
+    void freezeBirdAndPillarsInPlace();
 
     QTimer * pillarTimer;
 
     BirdItem * bird;
 
-// QGraphicsScene interface
-protected:
-    void keyPressEvent(QKeyEvent *event);
-    void mousePressEvent(QGraphicsSceneMouseEvent *event);
+    bool gameOn;
+
+    int score;
+
+    int bestScore;
+
+    QGraphicsPixmapItem * gameOverPix;
+
+    QGraphicsTextItem * scoreTextItem;
 };
 
 #endif // SCENE_H

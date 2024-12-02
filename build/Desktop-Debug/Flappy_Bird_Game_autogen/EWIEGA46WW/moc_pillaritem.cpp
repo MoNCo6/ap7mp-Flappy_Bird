@@ -36,8 +36,9 @@ namespace {
 struct qt_meta_stringdata_CLASSPillarItemENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSPillarItemENDCLASS = QtMocHelpers::stringData(
     "PillarItem",
-    "setX",
+    "collideFail",
     "",
+    "setX",
     "x"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
@@ -51,21 +52,27 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSPillarItemENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
-       1,   23, // properties
+       2,   14, // methods
+       1,   30, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags, initial metatype offsets
+       1,    0,   26,    2, 0x06,    2 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    1,   20,    2, 0x0a,    2 /* Public */,
+       3,    1,   27,    2, 0x0a,    3 /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
 
  // slots: parameters
-    QMetaType::Void, QMetaType::QReal,    3,
+    QMetaType::Void, QMetaType::QReal,    4,
 
  // properties: name, type, flags
-       3, QMetaType::QReal, 0x00015103, uint(-1), 0,
+       4, QMetaType::QReal, 0x00015103, uint(-1), 0,
 
        0        // eod
 };
@@ -81,6 +88,8 @@ Q_CONSTINIT const QMetaObject PillarItem::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<qreal, std::true_type>,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<PillarItem, std::true_type>,
+        // method 'collideFail'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'setX'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         QtPrivate::TypeAndForceComplete<qreal, std::false_type>
@@ -94,8 +103,18 @@ void PillarItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<PillarItem *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->setX((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1]))); break;
+        case 0: _t->collideFail(); break;
+        case 1: _t->setX((*reinterpret_cast< std::add_pointer_t<qreal>>(_a[1]))); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            using _t = void (PillarItem::*)();
+            if (_t _q_method = &PillarItem::collideFail; *reinterpret_cast<_t *>(_a[1]) == _q_method) {
+                *result = 0;
+                return;
+            }
         }
     } else if (_c == QMetaObject::ReadProperty) {
         auto *_t = static_cast<PillarItem *>(_o);
@@ -139,13 +158,13 @@ int PillarItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }else if (_c == QMetaObject::ReadProperty || _c == QMetaObject::WriteProperty
             || _c == QMetaObject::ResetProperty || _c == QMetaObject::BindableProperty
             || _c == QMetaObject::RegisterPropertyMetaType) {
@@ -153,5 +172,11 @@ int PillarItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
         _id -= 1;
     }
     return _id;
+}
+
+// SIGNAL 0
+void PillarItem::collideFail()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
 }
 QT_WARNING_POP
