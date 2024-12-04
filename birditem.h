@@ -41,7 +41,7 @@ private:
         Down
     };
 
-    void updatePixmap();
+    void updateWingPosition();
 
     WingPosition wingPosition;
 
@@ -49,11 +49,12 @@ private:
     bool wingDirection;
 
     qreal m_rotation;
+
     qreal m_y;
 
-    QPropertyAnimation * yAnimation;
+    QPropertyAnimation *yAnimation;
 
-    QPropertyAnimation * rotationAnimation;
+    QPropertyAnimation *rotationAnimation;
 
     qreal groundPosition;
 };

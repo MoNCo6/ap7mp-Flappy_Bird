@@ -7,5 +7,6 @@
         <file>images/bird_down.png</file>
         <file>images/bird_middle.png</file>
         <file>images/bird_up.png</file>
+        <file>images/gear.png</file>
     </qresource>
 </RCC>

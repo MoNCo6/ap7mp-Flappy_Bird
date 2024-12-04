@@ -1,6 +1,8 @@
 #include "scene.h"
 #include <QGraphicsSceneMouseEvent>
 #include <QKeyEvent>
+#include <QDebug>
+#include "widget.h"
 
 // Konštruktor triedy Scene - inicializuje časovač na pridávanie stĺpov
 Scene::Scene(QObject *parent) : QGraphicsScene(parent), gameOn(false), score(0), bestScore(0)
@@ -132,6 +134,18 @@ void Scene::showGameOverGraphics()
     gameOverPix -> setPos(QPointF(0,0) - QPointF(gameOverPix -> boundingRect().width()/2,
                                                 gameOverPix->boundingRect().height()/2));
 
+    // Access the parent Widget
+    Widget *parentWidget = qobject_cast<Widget*>(parent());
+    if (parentWidget) {
+        QPushButton *settingsButton = parentWidget->getSettingsButton();
+
+        qDebug() << "Game over detected. Showing settings button.";
+
+        // Bring the button to the front and show it
+        settingsButton->raise();
+        settingsButton->show();
+    }
+
     // Vytvorenie textového objektu pre zobrazenie skóre
     scoreTextItem = new QGraphicsTextItem();
 
@@ -163,6 +177,16 @@ void Scene::hideGameOverGraphics()
         removeItem(scoreTextItem); // Odstránenie zo scény
         delete scoreTextItem; // Uvoľnenie pamäte
         scoreTextItem = nullptr; // Resetovanie ukazovateľa
+    }
+
+    Widget *parentWidget = qobject_cast<Widget*>(parent());
+    if (parentWidget) {
+        QPushButton *settingsButton = parentWidget->getSettingsButton();
+
+        qDebug() << "Game over graphic hidden. Hiding settings button.";
+
+        // Hide the settings button
+        settingsButton->hide();
     }
 }
 

@@ -11,10 +11,8 @@ BirdItem::BirdItem(QPixmap pixmap) :
     setPixmap(pixmap);
 
     // Inicializácia časovača na animáciu krídel
-    QTimer * birdWingsTimer = new QTimer(this);
-    connect(birdWingsTimer, &QTimer::timeout,[=](){
-        updatePixmap(); // Simulácia pohybu krídel zmenou obrázkov
-    });
+    QTimer *birdWingsTimer = new QTimer(this);
+    connect(birdWingsTimer, &QTimer::timeout, this, &BirdItem::updateWingPosition);
 
     // Spustenie časovača na pravidelné aktualizácie (každých 80 ms)
     birdWingsTimer -> start(80);
@@ -34,7 +32,7 @@ BirdItem::BirdItem(QPixmap pixmap) :
 }
 
 // Metóda na aktualizáciu obrázkov vtáčika (pohyb krídel)
-void BirdItem::updatePixmap()
+void BirdItem::updateWingPosition()
 {
     if(wingPosition == WingPosition::Middle){
         if(wingDirection){
@@ -44,7 +42,7 @@ void BirdItem::updatePixmap()
             wingDirection = 0;
         }else{
             // Nastavenie obrázka krídel dole
-            setPixmap(QPixmap("::/images/bird_down.png"));
+            setPixmap(QPixmap(":/images/bird_down.png"));
             wingPosition = WingPosition::Down;
             wingDirection = 1;
         }

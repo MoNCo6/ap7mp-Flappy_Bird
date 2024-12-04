@@ -28,7 +28,6 @@ signals:
 
 public slots:
 
-    // QGraphicsScene interface
 protected:
     void keyPressEvent(QKeyEvent *event);
 
@@ -46,9 +45,9 @@ private:
 
     void freezeBirdAndPillarsInPlace();
 
-    QTimer * pillarTimer;
+    QTimer *pillarTimer;
 
-    BirdItem * bird;
+    BirdItem *bird;
 
     bool gameOn;
 
@@ -56,9 +55,9 @@ private:
 
     int bestScore;
 
-    QGraphicsPixmapItem * gameOverPix;
+    QGraphicsPixmapItem *gameOverPix;
 
-    QGraphicsTextItem * scoreTextItem;
+    QGraphicsTextItem *scoreTextItem;
 };
 
 #endif // SCENE_H

@@ -27,11 +27,11 @@ public slots:
 private:
     bool collidesWithBird();
 
-    QGraphicsPixmapItem * topPillar;
+    QGraphicsPixmapItem *topPillar;
 
-    QGraphicsPixmapItem * bottomPillar;
+    QGraphicsPixmapItem *bottomPillar;
 
-    QPropertyAnimation * xAnimation;
+    QPropertyAnimation *xAnimation;
 
     int yPos;
 
